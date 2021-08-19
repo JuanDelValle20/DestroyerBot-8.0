@@ -5,8 +5,7 @@ const help = (prefix) => {
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Editor: Juan del Valle 
-
+   ○ Creador: Juan del Valle™ 
 
 
 ◉ *NUEVOS COMANDOS*
@@ -88,8 +87,6 @@ Para usar estas funciones el bot necesita admin
 
 ву Juan del Valle
 
-
-⌜ *DESTRUCTORES* ⌟ 
 `
 }
 
