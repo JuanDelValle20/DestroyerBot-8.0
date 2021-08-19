@@ -22,7 +22,7 @@ Ejemplo: *kick @xxxxxx @xxxxx
 Ya que el numero del bot se ira a soporte
 Quedas advertido :)
 
-ву ѕнαη∂υу`
+ву Juan del Valle`
 
 }
 
