@@ -21,7 +21,6 @@ const fun = (prefix, ownerBot, botName) => {
   ├─ ❏ ${prefix}game
   ├─ ❏ ${prefix}bucin
   ├─ ❏ ${prefix}trust
-  ├─ ❏ ${prefix}dare
-  └─ ❏ ${prefix}simi`
+  ├─ ❏ ${prefix}dare`
 }
 exports.fun = fun
