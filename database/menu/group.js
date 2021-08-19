@@ -32,7 +32,6 @@ const group = (prefix, ownerBot, botName) => {
   ├─ ❏ ${prefix}leveling
   ├─ ❏ ${prefix}level
   ├─ ❏ ${prefix}delete
-  ├─ ❏ ${prefix}simih
   └─ ❏ ${prefix}ownergroup`
 }
 exports.group = group
