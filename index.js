@@ -92,13 +92,13 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******CARGA DE ENTRADA VCARD******/
 const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'VERSION:3.0\n' 
-            + 'FN:Shan\n' // Nombre
-            + 'ORG:Shanduy;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=593967689722:+593 96 768 9722\n' // ID de WhatsApp + número de teléfono
+            + 'FN:Juan\n' // Nombre
+            + 'ORG:Juan del Valle;\n' // Propietario
+            + 'TEL;type=CELL;type=VOICE;waid=50241033780:+502 4103 3780\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******FIN DE ENTRADA VCARD******/
 
-prefix = '*'
+prefix = '!'
 blocked = []
 banChats = false
 
@@ -194,7 +194,7 @@ const getLevelingXp = (userId) => {
 //LEVEL FIN
 	
 function addMetadata(packname, author) {	
-	if (!packname) packname = 'ShanBot'; if (!author) author = 'shanduy';	
+	if (!packname) packname = 'DestroyerBot'; if (!author) author = 'Juan del Valle';	
 	author = author.replace(/[^a-zA-Z0-9]/g, '');	
 	let name = `${author}_${packname}`
 	if (fs.existsSync(`./${name}.exif`)) return `./${name}.exif`
@@ -340,7 +340,7 @@ async function starts() {
 					insta: 'Calmado 😎\n\n*Estoy descargando tu post 🔄*\n\nAguarde un momento, por favor\n\nву Juan del Valle',
 					musica: 'Calmado mortal estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\nSi no envio tu musica checa que version tienes del bot con *version\n\nву Juan del Valle',
 					musica2: 'Calmado mortal estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\nSi no envio tu musica checa que version tienes del bot con *version\n\nву Juan del Valle',
-					daftarB: `「NO ESTAS REGISTRADO」\n\nMORTAL NO APARECES EN MI BASE DE DATOS ✋🤚\n\nPara poder usarme escribe el siguente comando\n\nComando: ${prefix}registro Nombre\nEjemplo: ${prefix}registro Destroyer`,
+					registroB: `「NO ESTAS REGISTRADO」\n\nMORTAL NO APARECES EN MI BASE DE DATOS ✋🤚\n\nPara poder usarme escribe el siguente comando\n\nComando: ${prefix}registro Nombre\nEjemplo: ${prefix}registro Destroyer`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -533,7 +533,7 @@ async function starts() {
 
 /******ENTRADA FIN DE FUNCIONES******/
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'ShanBot'; if (!author) author = 'Shanduy';	
+				if (!packname) packname = 'DestroyerBot'; if (!author) author = 'Juan del Valle';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -646,7 +646,7 @@ async function starts() {
 					break
                  case 'promote':
 					client.updatePresence(from, Presence.composing) 
-                                        if (!isUser) return reply(mess.only.daftarB)
+                                        if (!isUser) return reply(mess.only.registroB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -706,7 +706,7 @@ break
 /******JUEGOS SHANDUY NO TE OLVIDES******/
 					
 case 'jhasdgfjkbsdjkfbsakjfbasjdfasdfjsadfj asdfsajd gfjsa g sajg sag':
-if (!isUser) return reply(mess.only.daftarB)
+if (!isUser) return reply(mess.only.registroB)
 rate = body.slice(5)
 client.updatePresence(from, Presence.composing) 
 random = `${Math.floor(Math.random() * 100)}`
@@ -717,7 +717,7 @@ reply(hasil)
 break
 
 case 'cuties':
-if (!isUser) return reply(mess.only.daftarB)
+if (!isUser) return reply(mess.only.registroB)
 rate = body.slice(9)
 client.updatePresence(from, Presence.composing) 
 random = `${Math.floor(Math.random() * 100)}`
@@ -729,7 +729,7 @@ break
 				  
 case 'rajsd fsa d sadg as gisabgjnas dg asdg asdg aisdngjkas dgias gi asig ahsg':
 try{
-if (!isUser) return reply(mess.only.daftarB)
+if (!isUser) return reply(mess.only.registroB)
 if (!isGroup) return reply(mess.only.group)
 d = []
 teks = 'Top 5 de los mas gays del grupo\n\n'
@@ -763,21 +763,21 @@ break
 				break
 		/*case 'tneon':
                 data = await await getBuffer(`https://api.zeks.xyz/api/text3dbox?apikey=tshanduyx&text=${body.slice(8)}`)
-                if (!isUser) return reply(mess.only.daftarB)
+                if (!isUser) return reply(mess.only.registroB)
                 client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(8)})
                 break*/
 	
 	case 'creador':
-	       client.sendMessage(from, {displayname: "Shan 🥸", vcard: vcard}, MessageType.contact, { quoted: mek})
+	       client.sendMessage(from, {displayname: "Juan ", vcard: vcard}, MessageType.contact, { quoted: mek})
 		client.sendMessage(from, 'Arriba está el número del creador del bot <ѕнαηвσт ву Juan del Valle>\n\nNO SOY UN BOT \n\nAhi puedes resolver tus preguntas y errores :)\n\nEste no es el numero del propietario del bot que estas usando ahora mismo. Si no, del creador de la base de datos del bot o sea Juan\n\nву Juan del Valle',MessageType.text, { quoted: mek} )
-                const none = fs.readFileSync('./mp3/shan.mp3');
+                const none = fs.readFileSync('0');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                 break
 	
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
                 if (!isGroupAdmins) return reply(mess.only.Badmin)
-		if (!isUser) return reply(mess.only.daftarB)
+		if (!isUser) return reply(mess.only.registroB)
                 if (!isGroup) return reply(mess.only.group)
                 teks = body.slice(9)
                 group = await client.groupMetadata(from);
@@ -796,7 +796,7 @@ break
                                case 'tts':
 				   client.updatePresence(from, Presence.recording) 
 				   if (args.length < 1) return client.sendMessage(from, 'Cual es el código de idioma?\n\nPara saber el codigo de idioma coloque el comando ${prefix}idioma', text, {quoted: mek})
-                                   if (!isUser) return reply(mess.only.daftarB)
+                                   if (!isUser) return reply(mess.only.registroB)
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Y el texto?', text, {quoted: mek})
 					dtt = body.slice(8)
@@ -817,7 +817,7 @@ break
                                 case 'listadmins':
 				case 'adminlist':
 					client.updatePresence(from, Presence.composing) 
-                                        if (!isUser) return reply(mess.only.daftarB)
+                                        if (!isUser) return reply(mess.only.registroB)
 					if (!isGroup) return reply(mess.only.group)
 					teks = `*Lista De Administradores Del Grupo*\n\n${groupMetadata.subject}\n\nTotal: ${groupAdmins.length}\n\n`
 					no = 0
@@ -838,7 +838,7 @@ break
 			case 'tagall':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
-                                        if (!isUser) return reply(mess.only.daftarB)
+                                        if (!isUser) return reply(mess.only.registroB)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
@@ -847,7 +847,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 MENCIONANDO 〙✪══\n╠➥'+teks+'╚═〘 by shanduy 〙', members_id, true)
+					mentions('╔══✪〘 MENCIONANDO 〙✪══\n╠➥'+teks+'╚═〘 by Juan del VAlle 〙', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
@@ -878,7 +878,7 @@ break
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 Shanduy 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 Juan del Valle 」*\n\n${body.slice(4)}`)
 						}
 						reply('Transmisión exitosa')
 					}
@@ -923,40 +923,32 @@ break
 				break
                                       
 				case 'kick':
-					case 'pafuera':
+					case 'hakai':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marca al que vamos a funar')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Etiqueta al usuario que vamos a *DESTRUIR*')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Pedido recibido, chao nefastooo 👋 :\n'
+						teks = '_Antes de la creación, viene la destrucción_ ... *HAKAI* :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
-				        const none = fs.readFileSync('./mp3/baneado.mp3');
-		                        client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                                                }
+						}
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-                                        mentions(`Pedido recibido\n@${mentioned[0].split('@')[0]}\nFue eliminado del grupo`, mentioned, true)
+						mentions(`_Antes de la creación, viene la destrucción_ ... *HAKAI* 🖐 : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupRemove(from, mentioned)
-					client.sendMessage(mentioned, 'Chao puta gorda', text)
-                                        const none = fs.readFileSync('./mp3/baneado.mp3');
-		                        client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+					client.sendMessage(mentioned, 'Le faltaba odio', text)
 					}
 					break
-				
 				case 'exe':
-	             client.updatePresence(from, Presence.composing) 
-	             if (!isGroup) return reply(mess.only.group)
-                     if (!isUser) return reply(mess.only.daftarB)
-		     if (!isGroupAdmins) return reply(mess.only.admin)
-	             if (!isGroupAdmins) return reply(mess.only.Badmin)
-                     const cmd = body.slice(5)
+	              client.updatePresence(from, Presence.composing) 
+	              if (!isOwner) return reply(mess.only.ownerB)
+	               const cmd = body.slice(5)
 	               exec(cmd, (err, stdout) => {
-		           if(err) return client.sendMessage(from, 'NO VEMO GILE ✋🥸🤚', text, { quoted: mek })
+		           if(err) return client.sendMessage(from, "Adiós", text, { quoted: mek })
 		           if (stdout) {
 			       client.sendMessage(from, stdout, text, { quoted: mek })
 		           }
@@ -968,7 +960,7 @@ break
 				
 				case 'antikwai':
                                         if (!isGroup) return reply(mess.only.group)
-					if (!isUser) return reply(mess.only.daftarB)
+					if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (!isGroupAdmins) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
@@ -989,7 +981,7 @@ break
 				
 				case 'antinsta':
                                         if (!isGroup) return reply(mess.only.group)
-					if (!isUser) return reply(mess.only.daftarB)
+					if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (!isGroupAdmins) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
@@ -1010,7 +1002,7 @@ break
 				
 				  case 'antitik':
                                         if (!isGroup) return reply(mess.only.group)
-					if (!isUser) return reply(mess.only.daftarB)
+					if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (!isGroupAdmins) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
@@ -1031,7 +1023,7 @@ break
 				
 				case 'antitube':
                                         if (!isGroup) return reply(mess.only.group)
-					if (!isUser) return reply(mess.only.daftarB)
+					if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (!isGroupAdmins) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
@@ -1052,7 +1044,7 @@ break
 				
 				case 'antiface':
                                         if (!isGroup) return reply(mess.only.group)
-					if (!isUser) return reply(mess.only.daftarB)
+					if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (!isGroupAdmins) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
@@ -1073,7 +1065,7 @@ break
 				        
 			       case 'antilink':
                                         if (!isGroup) return reply(mess.only.group)
-					if (!isUser) return reply(mess.only.daftarB)
+					if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (!isGroupAdmins) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
@@ -1101,7 +1093,7 @@ break
 				case 'linkgc':
 				    client.updatePresence(from, Presence.composing) 
 				    if (!isGroup) return reply(mess.only.group)
-                                     if (!isUser) return reply(mess.only.daftarB)
+                                     if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					linkgc = await client.groupInviteCode (from)
 					yeh = `Aqui esta el link del grupo\n\nhttps://chat.whatsapp.com/${linkgc}\n\nLink Del Grupo *${groupName}*`
@@ -1139,8 +1131,8 @@ break
 					client.sendMessage(from, open, text, {quoted: mek})
 					break
 				                case 'attp':
-						if (!isUser) return reply(mess.only.daftarB)
-					        if (args.length < 1) return reply(`¿Dónde está el texto?\n*Ejemplo:* ${prefix}attp shanduy`)
+						if (!isUser) return reply(mess.only.registroB)
+					        if (args.length < 1) return reply(`¿Dónde está el texto?\n*Ejemplo:* ${prefix}attp Destroyer`)
 						reply(mess.only.attp)
 					        attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${body.slice(6)}`)
 						client.sendMessage(from, attp2, MessageType.sticker, {quoted: mek})
@@ -1154,7 +1146,7 @@ break
 				case 'sticker':
 				case 'stickergif':
 				case 'stikergif':
-			        if (!isUser) return reply(mess.only.daftarB)
+			        if (!isUser) return reply(mess.only.registroB)
 				if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -1223,7 +1215,7 @@ break
 					break
 			            case 'toimg':
 				    client.updatePresence(from, Presence.composing)
-                                    if (!isUser) return reply(mess.only.daftarB)
+                                    if (!isUser) return reply(mess.only.registroB)
 					if (!isQuotedSticker) return reply('❌ Solo stickers')
 					reply(mess.only.imgs)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -1239,7 +1231,7 @@ break
 					break
                         case 'tomp3':
                 	client.updatePresence(from, Presence.composing) 
-                        if (!isUser) return reply(mess.only.daftarB)
+                        if (!isUser) return reply(mess.only.registroB)
 					if (!isQuotedVideo) return reply('❌ Solo videos')
 					reply(mess.only.mpcancion)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -1260,7 +1252,7 @@ break
 				
 	        case 'play':   
 	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play Industry Baby - Lil Nas X')
-		if (!isUser) return reply(mess.only.daftarB)
+		if (!isUser) return reply(mess.only.registroB)
                 reply(mess.only.musica)
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=hamilton44`)
@@ -1274,7 +1266,7 @@ break
 		
 		case 'play2':   
 	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play2 Industry Baby - Lil Nas X')
-		if (!isUser) return reply(mess.only.daftarB)
+		if (!isUser) return reply(mess.only.registroB)
 	        reply(mess.only.musica2)
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=shanduy44`)
@@ -1334,7 +1326,7 @@ break
                                case 'eryweydrjdgh srfj wsrj s':
 				    try{
 						if (!isNsfw) return reply('❌ *NSFW NO ESTA ACTIVADO* ❌')
-                                                if (!isUser) return reply(mess.only.daftarB)
+                                                if (!isUser) return reply(mess.only.registroB)
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=BotWeA`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'mesum'})
@@ -1363,7 +1355,7 @@ break
 				case 'rw tireyiw iwr iwri ':
 					gatauda = body.slice(7)
 					reply(mess.wait)
-                                        if (!isUser) return reply(mess.only.daftarB)
+                                        if (!isUser) return reply(mess.only.registroB)
 					anu = await fetchJson(`https://arugaz.my.id/api/nekonime`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image,{quoted: mek})
@@ -1371,7 +1363,7 @@ break
 				case 'wr iwr6i2546w5464w8 4 ':
 					gatauda = body.slice(13)
 					reply(mess.wait)
-                                        if (!isUser) return reply(mess.only.daftarB)
+                                        if (!isUser) return reply(mess.only.registroB)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=BotWeA`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
@@ -1379,7 +1371,7 @@ break
                              case 'delete':
 					case 'del':
 					if (!isGroup)return reply(mess.only.group)
-                                        if (!isUser) return reply(mess.only.daftarB)
+                                        if (!isUser) return reply(mess.only.registroB)
 		                        client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
 					break
                  case 'level':
@@ -1417,7 +1409,7 @@ break
                                 /*case 'b34687b247v848u 56u56 u35u356 i 7':
                                         try{
                                                 if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
-                                                if (!isUser) return reply(mess.only.daftarB)
+                                                if (!isUser) return reply(mess.only.registroB)
                                                 res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=APIKEYLU`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
                                                 client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Estas enfermo flaco NEFASTOOOOO'})
@@ -1448,7 +1440,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break*/
-					case 'e567i  9ol8': 
+					case 'e567i  7 8ol57o e5o': 
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/biganimetiddies`, {method: 'get'})
@@ -1459,7 +1451,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwblowjob':
+					case '53753075df dy  sfu':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob`, {method: 'get'})
@@ -1470,7 +1462,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwneko':
+					case ' saerusryi tuo ry ':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://api.computerfreaker.cf/v1/neko`, {method: 'get'})
@@ -1481,7 +1473,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					/*case 'nsfwyuri':
+					/*case ' wryowrwroetyo ,r':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://api.computerfreaker.cf/v1/yuri`, {method: 'get'})
@@ -1492,7 +1484,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 					break*/
-				case 'nsfwass':
+				case 'te iryw3io wr w iurow':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`'https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
@@ -1503,7 +1495,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwsidebobs':
+					case 'lyilo,  uip t,yip, r ':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/sideoppai`, {method: 'get'})
@@ -1514,7 +1506,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 					    break
-					case 'nsfwahegao':
+					case 'we ut8weubgvwe rygsry':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/ahegao`, {method: 'get'})
@@ -1525,7 +1517,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwthighs':
+					case 'kmgfbvarfrtuby ruy v ':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animethighss`, {method: 'get'})
@@ -1536,7 +1528,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwfeets':
+					case 'erybri rwwwywe eqytq':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animefeets`, {method: 'get'})
@@ -1547,7 +1539,7 @@ break
 							reply('❌ *ERROR* ❌') 
 						}
 						break
-					case 'nsfwarmpits':
+					case 'awyrnty jdfyn yu sfg hq':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animearmpits`, {method: 'get'})
@@ -1558,7 +1550,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-						case 'nsfwtoin':
+						case 'ary ngh adf vjgvb hd':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
