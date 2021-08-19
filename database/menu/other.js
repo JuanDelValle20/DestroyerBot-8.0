@@ -16,7 +16,6 @@ const other = (prefix, ownerBot, botName) => {
   │
   ├─ ❏ ${prefix}send
   ├─ ❏ ${prefix}wame
-  ├─ ❏ ${prefix}virtex
   ├─ ❏ ${prefix}qrcode
   ├─ ❏ ${prefix}timer
   ├─ ❏ ${prefix}fml
