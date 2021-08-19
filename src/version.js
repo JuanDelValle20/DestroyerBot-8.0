@@ -4,7 +4,7 @@ const version = (prefix, pushname) => {
 
 *Actualizado:* 18 de Agosto del 2021
 *Versión actual:* 8.0
-*Ofrecida por:* Juan del Valle*
+*Ofrecida por:* Juan del Valle™
 
 
 ву Juan del Valle
