@@ -272,11 +272,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `HOLAA!! @${num.split('@')[0]} ¿COMO ESTAS?😃\n\n『Bienvenido A *${mdata.subject}*』\n\nUn gusto conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Solo disfrutar de este grupo y divertite 🥳*`
+				teks = `Bienvenid@ @${num.split('@')[0]}\n Ahora eres un Destructor(a)!!!! Bienvenido a *${mdata.subject}* el mejor grupo de Pokémon Go 👉👈\n\nUn gusto conocerte mortal 😀\n\nOjito sigue las reglas del grupo si no, para fuera mortal, los admins te eliminan 🧐\n\nOjito con el spam 🧐\n\nby JuandelValle`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Bueno, se fue @${num.split('@')[0]} 👋\n\nQue dios lo bendiga 😎`
+				teks = `NOOOO se nos fue un Destructor(a) 😎 @${num.split('@')[0]}👋\n\n No lo extrañaremos 😎`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -1141,7 +1141,7 @@ break
 				case 'tucson':
 				case 'opa':
 				case 'shan':
-				case 'nefasto':
+				case 'uaygsdjvashva':
 				case 'stiker':
 				case 'sticker':
 				case 'stickergif':
