@@ -239,14 +239,6 @@ function kyun(seconds){
   return `${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segundos`
 }
 
-async function starts() {
-	const client = new WAConnection()
-	client.version = [2, 2126, 14]
-        client.logger.level = 'warn'
-	console.log(banner.string)
-	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Escanea el codigo QR rápido!!!  '))
-	})
 
 	fs.existsSync('./Nazwa.json') && client.loadAuthInfo('./Nazwa.json')
 	client.on('connecting', () => {
