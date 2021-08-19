@@ -33,7 +33,6 @@ const moment = require('moment-timezone')
 const { exec } = require('child_process')
 const kagApi = require('@kagchi/kag-api')
 const axios = require("axios")
-const fetch = require('node-fetch')
 /*const tiktod = require('tiktok-scraper')*/
 const ffmpeg = require('fluent-ffmpeg')
 const { removeBackgroundFromImageFile } = require('remove.bg')
