@@ -28,7 +28,6 @@ const help = (prefix, ownerBot, botName) => {
   ├─ ❏ ${prefix}islammenu
   ├─ ❏ ${prefix}stalkmenu
   ├─ ❏ ${prefix}wibumenu
-  ├─ ❏ ${prefix}18+menu
   ├─ ❏ ${prefix}funmenu
   ├─ ❏ ${prefix}todmenu
   ├─ ❏ ${prefix}informationmenu
@@ -39,7 +38,6 @@ const help = (prefix, ownerBot, botName) => {
   │
   ├─ ❏ ${prefix}send
   ├─ ❏ ${prefix}wame
-  ├─ ❏ ${prefix}virtex
   ├─ ❏ ${prefix}qrcode
   ├─ ❏ ${prefix}timer
   ├─ ❏ ${prefix}fml
