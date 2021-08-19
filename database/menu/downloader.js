@@ -14,6 +14,7 @@ const downloader = (prefix, botName, ownerName) => {
   └─ ❏ ${prefix}bugreport
 ◪ *DOWNLOADER*
   │
+  ├─ ❏ ${prefix}pinterest
   ├─ ❏ ${prefix}ytmp3
   ├─ ❏ ${prefix}ytmp4
   └─ ❏ ${prefix}tiktok`
