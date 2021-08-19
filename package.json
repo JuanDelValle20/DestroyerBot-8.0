@@ -38,10 +38,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JuanDelValle20/DestroyerBot-8.0"
+    "url": "git+https://github.com/JuanDelValle20/DestroyerBot-8.0.git"
   },
   "bugs": {
-    "url": "https://github.com/JuanDelValle20/DestroyerBot-8.0"
+    "url": "https://github.com/JuanDelValle20/DestroyerBot-8.0.git"
   },
-  "homepage": "https://github.com/JuanDelValle20/DestroyerBot-8.0#readme"
+  "homepage": "https://github.com/JuanDelValle20/DestroyerBot-8.0.git#readme"
 }
