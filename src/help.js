@@ -1,13 +1,12 @@
 const help = (prefix) => {
 	return `
 
-⌜ *ѕнαηвσт ву ѕнαη∂υу* ⌟  
+⌜ *DestroyerBot ву Juan del Valle* ⌟  
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: ѕнαη∂υу™ 
-   ○ Como instalar el bot: https://www.youtube.com/watch?v=2LQSzEbpJ-M
-   ○ Instagram: https://www.instagram.com/thepavos
+   ○ Editor: Juan del Valle 
+
 
 
 ◉ *NUEVOS COMANDOS*
@@ -17,14 +16,10 @@ Banear a personas el uso del bot
 Level para tus grupos
 ○ ${prefix}antimenu
 Su nombre lo dice todo (antilink)
-○ ${prefix}otak
-Monas chinas
 ○ ${prefix}shantera
 Interactua con el bot
 
 ◉ *NUEVOS MENUS*
-○ ${prefix}juegos
-Diviértete con tus amigos :)
 ○ ${prefix}desmenu
 Descargar musica ( videos próximamente )
 ○ ${prefix}version
@@ -33,7 +28,7 @@ Conoce la versión de tu bot
 Comando de bienvenida solo grupos
 
 ◉ *PARA USAR EL BOT*
-Registrate con el comando ${prefix}daftar y tu nombre
+Registrate con el comando ${prefix}registro y tu nombre
 
 ◉ *RESUELVE TUS DUDAS*
   ║
@@ -88,20 +83,13 @@ Registrate con el comando ${prefix}daftar y tu nombre
 
 Para usar estas funciones el bot necesita admin
   
-◉ *NSWF* 
-  ║
-  ╚ ○ ${prefix}nsfwmenu
-
-Para activar los NSFW coloque el siguiente comando ${prefix}nsfw 1 y para desactivar los NSFW coloque ${prefix}nsfw 0
 
 
-No te olvides de seguirme en instagram flaco ;)
+
+ву Juan del Valle
 
 
-ву ѕнαη∂υу
-
-
-⌜ *ごきげんよう :)* ⌟ 
+⌜ *DESTRUCTORES* ⌟ 
 `
 }
 
