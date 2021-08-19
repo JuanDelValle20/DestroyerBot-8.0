@@ -23,7 +23,7 @@ Ejemplo: *desban @xxxxxxx
 
 ══════════════
 
-ву ѕнαη∂υу`
+ву Juan del Valle`
 
 }
 
