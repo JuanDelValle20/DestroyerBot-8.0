@@ -23,7 +23,6 @@ const {
 const { color, bgcolor } = require('./lib/color')
 const { bahasa } = require('./src/bahasa')
 const { negara } = require('./src/kodenegara')
-const { wait, pegatinas, musica, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 /******FIN DE ENTRADA DE ARCHIVO******/
@@ -47,7 +46,6 @@ const speed = require('performance-now')
 /******COMIENZO DE LA ENTRADA JSON******/
 const welkom = JSON.parse(fs.readFileSync('./database/json/welkom.json'))
 const ban = JSON.parse(fs.readFileSync('./database/banned.json'))
-const samih = JSON.parse(fs.readFileSync('./database/json/simi.json'))
 const user = JSON.parse(fs.readFileSync('./database/json/user.json'))
 const _leveling = JSON.parse(fs.readFileSync('./database/json/leveling.json'))
 const _level = JSON.parse(fs.readFileSync('./database/json/level.json'))
@@ -364,7 +362,6 @@ async function starts() {
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : false
-			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
@@ -1487,19 +1484,20 @@ break
 			  if (budy.includes(`Cuánto es 12+1`)) {
 						reply(`*Baka Hentai*`)
 						}
-									  
-					  if (isGroup && isSimi && budy != undefined) {
-							  console.log(budy)
-							  muehe = await simih(budy)
-							  console.log(muehe)
-							  reply(muehe)
-						  } else {
-							  console.log(color('[WARN]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
-						  }
-								 }
-			  } catch (e) {
-				  console.log('Error : %s', color(e, 'red'))
-			  }
-		  })
-	  }
-	  starts()
+						
+						if (isGroup && isSimi && budy != undefined) {
+							console.log(budy)
+							muehe = await simih(budy)
+							console.log(muehe)
+							reply(muehe)
+						} else {
+							console.log(color('[WARN]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+						}
+							   }
+			} catch (e) {
+				console.log('Error : %s', color(e, 'red'))
+			}
+		})
+	}
+	starts()
+	
