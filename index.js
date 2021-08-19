@@ -58,13 +58,11 @@ const { toinmenu } = require('./src/toinmenu')
 const { menuadmin } = require('./src/menuadmin')
 const { desmenu } = require('./src/desmenu')
 const { version } = require('./src/version')
-const { juegos } = require('./src/juegos')
 const { shantera } = require('./src/shantera')
 const { antimenu } = require('./src/antimenu')
 const { welmenu } = require('./src/welmenu')
 const { kickmenu } = require('./src/kickmenu')
 const { banmenu } = require('./src/banmenu')
-const { otak } = require('./src/otak')
 const { levelmenu } = require('./src/levelmenu')
 /*const { mediamenu } = require('./database/menu/mediamenu')
 const { educationmenu } = require('./database/menu/educationmenu')
@@ -361,7 +359,6 @@ async function starts() {
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
-			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
@@ -570,12 +567,6 @@ async function starts() {
 		case 'help':
 		case 'menu':   
                 client.sendMessage(from, help(prefix, sender), text, {quoted: mek})
-		break
-                case 'otak':
-		client.sendMessage(from, otak(prefix, sender), text, {quoted: mek})
-		break
-		case 'juegos':
-		client.sendMessage(from, juegos(prefix, sender), text, {quoted: mek})
 		break
 		case 'idioma':
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
