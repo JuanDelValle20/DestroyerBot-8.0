@@ -22,6 +22,7 @@ const menuadmin = (prefix, pushname) => {
  ├─ ❏ ${prefix}leveling
  ├─ ❏ ${prefix}level
  ├─ ❏ ${prefix}delete
+ ├─ ❏ ${prefix}simih
  └─ ❏ ${prefix}ownergroup
  `
 
