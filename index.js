@@ -1737,7 +1737,15 @@ break
 		if (budy.includes(`Cuánto es 12+1`)) {
 				  reply(`*Baka Hentai*`)
 				  }
+
+		if (budy.includes(`Oye bot, tú y yo qué somos`)) {
+				  reply(`*😏 ¿Quieres que lo sepan todos?\n\n¿O que sea un secreto entre nosotros?*`)
+				  }
 			  				  
+		if (budy.includes(`Oye bot tu y yo que somos`)) {
+				  reply(`*😏 ¿Quieres que lo sepan todos?\n\n¿O que sea un secreto entre nosotros?*`)
+				  }
+
 				if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
