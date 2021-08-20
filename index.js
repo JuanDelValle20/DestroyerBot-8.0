@@ -716,14 +716,14 @@ hasil = `${rate}Usted es ${random}% gay\n\n${ga}`
 reply(hasil)
 break
 
-case 'cuties':
+case 'fan':
 if (!isUser) return reply(mess.only.registroB)
 rate = body.slice(9)
 client.updatePresence(from, Presence.composing) 
 random = `${Math.floor(Math.random() * 100)}`
-cuties = random
-if (cuties < 20 ) {cu = 'Mi loco usted va para el cielo 👏'} else if (cuties == 21 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 23 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 24 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 25 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 26 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 27 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 28 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 29 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 30 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 31 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 32 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 33 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 34 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 35 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 36 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 37 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 38 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 39 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 40 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 41 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 42 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 43 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 44 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 45 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 46 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 47 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 48 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 49 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 50 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties > 51) {cu = 'Señores un autentico FAN DE CUTIES esta en el grupo 🥸'}
-hasil = `${rate}Resultado ${random}% fan de cuties\n\n${cu}`
+fan = random
+if (fan < 20 ) {cu = 'Te mereces el cielo 👏'} else if (fan == 21 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 23 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 24 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 25 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 26 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 27 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 28 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 29 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 30 ) {cu = 'Te salvaste rattata 😎'} else if (fan == 31 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 32 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 33 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 34 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 35 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 36 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 37 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 38 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 39 ) {cu = 'Caterpie que hace viendo videos de cómo ser un seguidor del TODOPODEROSO BIDOOF? 🤔'} else if (fan == 40 ) {cu = 'Ramirez que hace viendo pidgey 🤔'} else if (fan == 41 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 42 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 43 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 44 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 45 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 46 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 47 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 48 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 49 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan == 50 ) {cu = 'Mmm sospechoso pidgey 🧐'} else if (fan > 51) {cu = 'Señores un autentico SEGUIDOR DEL TODOPODEROSO BIDOOF está en el grupo 🥸'}
+hasil = `${rate}Resultado ${random}% fan del TODOPODEROSO BIDOOF\n\n${cu}`
 reply(hasil)
 break
 				  
@@ -1739,11 +1739,11 @@ break
 				  }
 
 		if (budy.includes(`Oye bot, tú y yo qué somos`)) {
-				  reply(`*😏 ¿Quieres que lo sepan todos?\n\n¿O que sea un secreto entre nosotros?*`)
+				  reply(`*😏 ¿Quieres que lo sepan todos?*\n\n*¿O que sea un secreto entre nosotros?*😏`)
 				  }
 			  				  
 		if (budy.includes(`Oye bot tu y yo que somos`)) {
-				  reply(`*😏 ¿Quieres que lo sepan todos?\n\n¿O que sea un secreto entre nosotros?*`)
+				  reply(`*😏 ¿Quieres que lo sepan todos?*\n\n*¿O que sea un secreto entre nosotros?*😏`)
 				  }
 
 				if (isGroup && isSimi && budy != undefined) {
