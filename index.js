@@ -769,7 +769,7 @@ break
 	
 	case 'creador':
 	       client.sendMessage(from, {displayname: "Juan ", vcard: vcard}, MessageType.contact, { quoted: mek})
-		client.sendMessage(from, 'Arriba está el número del creador del bot <ѕнαηвσт ву Juan del Valle>\n\nNO SOY UN BOT \n\nAhi puedes resolver tus preguntas y errores :)\n\nEste no es el numero del propietario del bot que estas usando ahora mismo. Si no, del creador de la base de datos del bot o sea Juan\n\nву Juan del Valle',MessageType.text, { quoted: mek} )
+		client.sendMessage(from, 'Arriba está el número del creador del bot <DestroyerBot ву Juan del Valle>\n\nNO SOY UN BOT \n\nAhi puedes resolver tus preguntas y errores :)\n\nEste no es el numero del propietario del bot que estas usando ahora mismo. Si no, del creador de la base de datos del bot o sea Juan\n\nву Juan del Valle',MessageType.text, { quoted: mek} )
                 const none = fs.readFileSync('0');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                 break
@@ -1191,7 +1191,7 @@ break
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`[❗] Fallo, al momento de convertir ${tipe} al sticker`)
+								reply(`[❗] Falló, al momento de convertir ${tipe} al sticker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
