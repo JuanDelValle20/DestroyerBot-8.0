@@ -2,8 +2,8 @@ const version = (prefix, pushname) => {
     return `
 *DestroyerBot ву Juan del Valle*
 
-*Actualizado:* 18 de Agosto del 2021
-*Versión actual:* 8.0
+*Actualizado:* 31 de Agosto del 2021
+*Versión actual:* 8.1
 *Ofrecida por:* Juan del Valle™
 
 
