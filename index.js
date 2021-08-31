@@ -891,12 +891,12 @@ break
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of groupMembers) {
-							client.sendMessage(_.jid, buff, image, {caption: `*「 HOLA BC 」*\n*Grupo* : ${groupName}\n\n${body.slice(6)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `*「 HOLA GRUPO UwU 」*\n*Grupo* : ${groupName}\n\n${body.slice(6)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of groupMembers) {
-							sendMess(_.jid, `*「 BC HOLA 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
+							sendMess(_.jid, `*「 HOLA UwU 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
 						}
 						reply('Grupo de transmisión exitoso')
 					}
